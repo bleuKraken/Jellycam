@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jelly The Fish</title>
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- my css -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Bootstrap-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- STORY BEGINS -->
+  <div id="background-image" class=" container-fluid text-center">
+    <!-- SECTION NAVIGATION -->
+    <section id="top-navbar" class="row">
+      <div class=" p-0 col d-flex justify-content-around text-lg">
+        <!-- NAV LINKS -->
+        <div class="pt-1 w-100 hover-blue">
+          <a href="http://www.aquariumofpacific.org/" class="btn text-light">Aquarium</a>
+        </div>
+        <div class="vertical-border"></div>
+        <div class="pt-1 w-100 hover-blue">
+          <a href="https://en.wikipedia.org/wiki/Chrysaora_fuscescens" class="btn text-light">Wiki Info</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION WITH TITLES, INFO, BUTTON -->
+    <section class="transparent-header row">
+      <div class="col">
+        <h1 class="text-warning font-weight-bold pt-3 pb-2">
+          Jellyfish: Sea Nettles
+        </h1>
+        <h4 class="pb-2 font-weight-bold m-0">
+          Monterey Bay Aquarium
+        </h4>
+        <!-- FUN FACT -->
+        <p class="fun-fact">
+          <span class="text-warning font-weight-bold text-lg">Fun Fact: </span>
+          The sea nettle hunts its prey with stinging cells called cnidocytes.
+          These pierce the skin and inject poison into their prey.
+          The sting of the sea nettle is not usually dangerous to humans, though it can be painful.
+        </p>
+        <!-- Button HTML (to Trigger Modal) -->
+        <div class="mt-4">
+          <div class="video-trigged">
+            <a href="#myModal" class="btn btn-lg btn-outline-warning font-weight-bold px-5" data-toggle="modal">Jelly Cam</a>
+            <!-- Modal HTML -->
+            <div id="myModal" class="modal fade">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header bg-dark">
+                    <button type="button" class="close text-light btn-outline-dark" data-dismiss="modal" aria-hidden="true">Close Stream &times;</button>
+                  </div>
+                  <div class="modal-body bg-dark">
+                    <iframe id="cartoonVideo" width="300" height="577" src="https://www.youtube.com/embed/vUL-RX_aoOg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="img-footer" class="text-center">
+          <!-- FOOTER -->
+          <p>Author:
+            <span><a href="https://codepen.io/erickkg">Erick Gonzalez</a></span>
+          </p>
+        </div>
+      </div>
+    </section>
+  </div> <!-- END OF BEING INSIDE IMAGE -->
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

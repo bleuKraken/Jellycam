@@ -1,0 +1,96 @@
+
+
+body, html {
+  height: 100%;
+  color: #fff;
+}
+
+#background-image {
+  color: #fff;
+  background: url("https://images.unsplash.com/photo-1488326402411-243548b2068b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+  /* REMOVED    no-repeat scroll 0px 100% / cover transparent; FROM ABOVE TODO: MAYBE DELETE */
+  height: 100vh;
+  overflow: auto;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+#top-navbar {
+  height: 45px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.display-toggle {
+  display: none;
+}
+
+.display-nopush {
+  z-index: 1;
+  background-color: black;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.text-lg {
+  font-size: 1.2rem;
+}
+
+.vertical-border {
+  height: 45px;
+  border: 1px solid #F16334;
+}
+
+#img-footer {
+  color: white;
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.fun-fact {
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.transparent-header {
+  /* background-color: red;  For browsers that do not support gradients */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+  /* Standard syntax (must be last) */
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* TODO: Maybe delete */
+.horizontal-break {
+  width: 100%;
+  background-color: #F16334 !important;
+  height: 5px;
+}
+
+.video-triggered {
+  margin: 20px;
+}
+
+.modal-content iframe {
+  margin: 0 auto;
+  display: block;
+}
+
+/* ######################################## */
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 1.5rem !important;
+  }
+
+  h4 {
+    font-size: 1.2rem !important;
+  }
+}
